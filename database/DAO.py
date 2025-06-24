@@ -72,7 +72,7 @@ class DAO():
         cursor.execute(query)
 
         for row in cursor:
-            result.append(...)
+            result.append(row['year'])
 
         cursor.close()
         conn.close()
